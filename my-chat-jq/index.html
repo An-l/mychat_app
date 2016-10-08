@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>vue-chat</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="sidebar">
+            <div class="card">
+                <header>
+                    <img class="avatar" width="40" height="40">
+                    <p class="name"></p>
+                </header>
+                <footer>
+                    <input class="search" type="text" placeholder="search user...">
+                </footer>
+            </div>
+            <div class="list">
+                <ul>
+                   <!--  <li>
+                        <img class="avatar" width="30" height="30" :alt="item.user.name" :src="item.user.img">
+                        <p class="name">{{item.user.name}}</p>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="message">
+                <ul>
+                    <!-- <li>
+                        <p class="time">
+                            <span>{{ item.date | time }}</span>
+                        </p>
+                        <div class="main">
+                            <img class="avatar" width="30" height="30" :src="item.self ? user.img : session.user.img" />
+                            <div class="text">{{ item.content }}</div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="text">
+                <textarea id="textArea" placeholder="按 Ctrl + Enter 发送"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src='js/jquery-1.12.1.min.js'></script>
+    <script src="js/build.js"></script>
+</body>
+
+</html>
